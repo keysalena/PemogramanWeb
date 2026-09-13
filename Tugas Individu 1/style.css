@@ -10,6 +10,11 @@
     --color-accent-teal: #7ebcb0;
     --color-text-dark: #2d3748;
     --color-arrow: #a0aec0;
+    --color-background: #f3f3f3;
+}
+
+body {
+    background-color: var(--color-background);
 }
 
 /* Header & Top Bar */
@@ -340,7 +345,7 @@
     display: flex;
     align-items: center;
     gap: 14px;
-    background-color: #f8fafc;
+    background-color: var(--color-background);
     padding: 14px 16px;
     border-radius: 14px;
     text-decoration: none;
@@ -348,7 +353,7 @@
 }
 
 .news-card-link:hover {
-    background-color: #f1f5f9;
+    background-color: #cbcbcb;
 }
 
 .news-image {
