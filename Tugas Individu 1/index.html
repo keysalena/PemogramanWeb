@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Desa Melung</title>
+
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="brand">
+                <img src="image.png" alt="Logo Desa" class="logo">
+                <div class="brand-text">
+                    <span class="sub-title">SISTEM INFORMASI DESA</span>
+                    <h1 class="main-title">Melung</h1>
+                </div>
+            </div>
+
+            <div class="header-date">
+                <i class="far fa-clock"></i>
+                <span id="live-clock">Memuat tanggal...</span>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#" class="nav-item"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="nav-item">Profil <i class="fas fa-chevron-down"></i></a>
+            <a href="#" class="nav-item">Transparansi</a>
+            <a href="#" class="nav-item">Kabar Desa</a>
+            <a href="#" class="nav-item">Pelayanan <i class="fas fa-chevron-down"></i></a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1 class="hero-title">Sejarah Desa Melung</h1>
+            <p class="hero-subtitle">Website Resmi Desa Melung</p>
+        </div>
+    </section>
+
+    <!-- Main Wrapper (Layout 2 Kolom) -->
+    <div class="main-wrapper">
+        
+        <!-- Kolom Kiri -->
+        <div class="left-column">
+            <!-- Card 1: Artikel Utama -->
+            <main class="content-card">
+                <h2 class="card-title">Kisah Kyai Melung</h2>
+                <p class="card-text">
+                    Cerita atau legenda rakyat tentang desa Melung adanya Syech R. Abdurrahman (Kyai Melung) sebagai pendiri dan sesepuh desa Melung yang tidak tercatat dalam dokumen sejarah, namun diceritakan secara turun temurun. Diceritakan oleh para orang tua kepada anak-anaknya atau generasi penerusnya tidak lepas dari sejarah kadipaten Pasir Luhur, sebagai tempat persinggahan dan perlintasan R. Kamandaka dan para prajurit Kadipaten Pasir Luhur.
+                </p>
+                <h2 class="card-title" style="margin-top: 24px;">Wilayah Administratif</h2>
+                <p class="card-text">
+                    Pada suatu saat para prajurit dalam perlintasannya mendengar adanya ayam R. Kamandaka berkokok dikejauhan yang sangat keras bunyinya (melung-melung) disuatu wilayah maka sumber suara ayam berkokok itu ditandai sebagai daerah “Melung” yang dahulu masuk ke dalam wilayah Kecamatan Kebumen dan baru sekitar tahun 1955 dimasukkan ke dalam wilayah Kecamatan Kedungbanteng.
+                </p>
+                <h2 class="card-title" style="margin-top: 24px;">Versi R. Singo Guna</h2>
+                <p class="card-text">
+                    Lalu versi kedua adalah dengan adanya R. Singo Guna yang merupakan keturunan dari R. Honggo Wongso putra dari R. Klapa Aking atau R. Kolopaking. R. Honggo Wangsa menurunkan R. Niti Menggolo kemudian R. Niti Menggolo menurunkan anak bernama R. Kalioso (Syech Abdul Djalal) lalu menurunan anak bernama R. Singo Guna yang hidup di desa Melung.
+                </p>
+                <p class="card-text" style="margin-top: 16px;">
+                    Setelah itu masuk lagi keturunan Kakak R. Singo Guna yaitu R. Suro Handoko dan R. Suro Menggolo. Putra R. Suro Handoko yang bernama R. Sagi (R. Wirya Dikrama) memimpin desa Melung.
+                </p>
+            </main>
+
+            <!-- Card 2: Form Tulis Komentar -->
+            <div class="comment-card">
+                <h3 class="comment-title">
+                    <i class="fas fa-comments"></i> Tulis Komentar
+                </h3>
+
+                <form id="commentForm">
+                    <div class="form-group">
+                        <label for="komentar">Komentar Anda <span class="required">*</span></label>
+                        <textarea id="komentar" rows="4" placeholder="Tulis tanggapan atau komentar..." required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nama">Nama Pengirim <span class="required">*</span></label>
+                            <input type="text" id="nama" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telepon">No. Telepon / WA <span class="required">*</span></label>
+                            <input type="text" id="telepon" placeholder="Nomor Telepon (Hanya Angka)" required>
+                        </div>
+                    </div>
+
+                    <!-- Box reCAPTCHA -->
+                    <div class="recaptcha-box">
+                        <div class="recaptcha-left">
+                            <input type="checkbox" id="captchaCheck">
+                            <label for="captchaCheck">I'm not a robot</label>
+                        </div>
+                        <div class="recaptcha-right">
+                            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA">
+                            <span>reCAPTCHA</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Kirim Komentar
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Kolom Kanan: Sidebar -->
+        <aside class="sidebar-card">
+            <h3 class="sidebar-title">Berita Terbaru</h3>
+
+            <div class="news-list">
+                <a href="#" class="news-item">
+                    <img src="image.png" alt="Logo Desa" class="news-img">
+                    <div class="news-info">
+                        <h4 class="news-title">Menggores Kisah di Desa Melung</h4>
+                        <span class="news-date">
+                            <i class="far fa-calendar-alt"></i> 08 Dec 2013
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="news-item">
+                    <img src="image.png" alt="Logo Desa" class="news-img">
+                    <div class="news-info">
+                        <h4 class="news-title">KETERBELAKANGAN DAN KEMISKINAN</h4>
+                        <span class="news-date">
+                            <i class="far fa-calendar-alt"></i> 11 Dec 2013
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <hr class="sidebar-divider">
+
+            <!-- Kategori Artikel -->
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">Kategori Artikel</h3>
+                <div class="category-list">
+                    <a href="#" class="category-item">
+                        <span class="category-name"><i class="fas fa-folder"></i> BERITA DESA</span>
+                        <span class="category-count">17</span>
+                    </a>
+                    <a href="#" class="category-item">
+                        <span class="category-name"><i class="fas fa-folder"></i> KEGIATAN DESA</span>
+                        <span class="category-count">3</span>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="sidebar-divider">
+
+            <!-- Tag Populer -->
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">Tag Populer</h3>
+                <div class="tag-cloud">
+                    <a href="#" class="tag-item">#Kegiatan <span class="tag-badge">15</span></a>
+                    <a href="#" class="tag-item">#Berita Desa <span class="tag-badge">9</span></a>
+                    <a href="#" class="tag-item">#Pengumuman Desa <span class="tag-badge">4</span></a>
+                    <a href="#" class="tag-item">#Diskusi <span class="tag-badge">2</span></a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Container Notifikasi Pop-up Toast -->
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
