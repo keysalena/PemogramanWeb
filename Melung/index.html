@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Informasi Desa Melung</title>
+
+    <!-- Google Fonts & Font Awesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header Utama -->
+    <header class="header-utama">
+      <!-- Baris Atas Header (Logo & Jam) -->
+      <div class="header-top-bar">
+        <div class="logo-brand">
+          <img src="image.png" alt="Logo Desa" class="logo-image" />
+          <div class="brand-text-group">
+            <span class="brand-subtitle">SISTEM INFORMASI DESA</span>
+            <h1 class="brand-title">Melung</h1>
+          </div>
+        </div>
+
+        <div class="header-clock">
+          <i class="far fa-clock"></i>
+          <span id="live-clock">Minggu, 13 Sep 2026 • 19:27:48 WIB</span>
+        </div>
+      </div>
+
+      <!-- Menu Navigasi -->
+      <nav class="main-navigation">
+        <a href="index.html" class="nav-link" style="color: #004d47"
+          ><i class="fas fa-home"></i> Home</a
+        >
+        <!-- <a href="index.html" class="nav-link" style="color: #004d47;"><i class="fas fa-home"></i> Home</a> -->
+        <a href="#" class="nav-link"
+          >Profil <i class="fas fa-chevron-down"></i
+        ></a>
+        <a href="berita.html" class="nav-link">Berita</a>
+        <a href="#" class="nav-link">Kabar Desa</a>
+        <a href="#" class="nav-link"
+          >Pelayanan <i class="fas fa-chevron-down"></i
+        ></a>
+      </nav>
+    </header>
+
+    <!-- Banner Hero / Judul Halaman -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <h1 class="hero-title">Sejarah Desa Melung</h1>
+        <p class="hero-subtitle">Website Resmi Desa Melung</p>
+      </div>
+    </section>
+
+    <!-- Area Layout Utama 2 Kolom -->
+    <div class="page-layout-container">
+      <!-- Kolom Kiri (Artikel & Form Komentar) -->
+      <div class="main-content-column">
+        <!-- Kartu 1: Artikel Sejarah Desa -->
+        <main class="card-article">
+          <h2 class="article-heading">Kisah Kyai Melung</h2>
+          <p class="article-text">
+            Cerita atau legenda rakyat tentang desa Melung adanya Syech R.
+            Abdurrahman (Kyai Melung) sebagai pendiri dan sesepuh desa Melung
+            yang tidak tercatat dalam dokumen sejarah, namun diceritakan secara
+            turun temurun. Diceritakan oleh para orang tua kepada anak-anaknya
+            atau generasi penerusnya tidak lepas dari sejarah kadipaten Pasir
+            Luhur, sebagai tempat persinggahan dan perlintasan R. Kamandaka dan
+            para prajurit Kadipaten Pasir Luhur.
+          </p>
+          <h2 class="article-heading heading-spacing">Wilayah Administratif</h2>
+          <p class="article-text">
+            Pada suatu saat para prajurit dalam perlintasannya mendengar adanya
+            ayam R. Kamandaka berkokok dikejauhan yang sangat keras bunyinya
+            (melung-melung) disuatu wilayah maka sumber suara ayam berkokok itu
+            ditandai sebagai daerah “Melung” yang dahulu masuk ke dalam wilayah
+            Kecamatan Kebumen dan baru sekitar tahun 1955 dimasukkan ke dalam
+            wilayah Kecamatan Kedungbanteng.
+          </p>
+          <h2 class="article-heading heading-spacing">Versi R. Singo Guna</h2>
+          <p class="article-text">
+            Lalu versi kedua adalah dengan adanya R. Singo Guna yang merupakan
+            keturunan dari R. Honggo Wongso putra dari R. Klapa Aking atau R.
+            Kolopaking. R. Honggo Wangsa menurunkan R. Niti Menggolo kemudian R.
+            Niti Menggolo menurunkan anak bernama R. Kalioso (Syech Abdul
+            Djalal) lalu menurunan anak bernama R. Singo Guna yang hidup di desa
+            Melung.
+          </p>
+          <p class="article-text paragraph-spacing">
+            Setelah itu masuk lagi keturunan Kakak R. Singo Guna yaitu R. Suro
+            Handoko dan R. Suro Menggolo. Putra R. Suro Handoko yang bernama R.
+            Sagi (R. Wirya Dikrama) memimpin desa Melung.
+          </p>
+        </main>
+
+        <!-- Kartu 2: Form Tulis Komentar -->
+        <div class="card-comment-form">
+          <h3 class="comment-heading">
+            <i class="fas fa-comments"></i> Tulis Komentar
+          </h3>
+
+          <form id="commentForm">
+            <div class="form-group">
+              <label for="komentar"
+                >Komentar Anda <span class="label-required">*</span></label
+              >
+              <textarea
+                id="komentar"
+                rows="4"
+                placeholder="Tulis tanggapan atau komentar..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-row-two-columns">
+              <div class="form-group">
+                <label for="nama"
+                  >Nama Pengirim <span class="label-required">*</span></label
+                >
+                <input type="text" id="nama" placeholder="Nama Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="telepon"
+                  >No. Telepon / WA <span class="label-required">*</span></label
+                >
+                <input
+                  type="text"
+                  id="telepon"
+                  placeholder="Nomor Telepon (Hanya Angka)"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Box reCAPTCHA -->
+            <div class="captcha-box">
+              <div class="captcha-left">
+                <input type="checkbox" id="captchaCheck" required />
+                <label for="captchaCheck">I'm not a robot</label>
+              </div>
+              <div class="captcha-right">
+                <img
+                  src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                  alt="reCAPTCHA"
+                />
+                <span>reCAPTCHA</span>
+              </div>
+            </div>
+
+            <button type="submit" class="button-submit">
+              <i class="fas fa-paper-plane"></i> Kirim Komentar
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Sidebar Informasi -->
+      <aside class="sidebar-column">
+        <!-- Widget Berita Terbaru -->
+        <div class="sidebar-widget">
+          <h3 class="sidebar-heading">Berita Terbaru</h3>
+          <div class="news-list-group">
+            <a href="#" class="news-card-link">
+              <img src="image.png" alt="Logo Desa" class="news-image" />
+              <div class="news-content-info">
+                <h4 class="news-title">Menggores Kisah di Desa Melung</h4>
+                <span class="news-date">
+                  <i class="far fa-calendar-alt"></i> 08 Dec 2013
+                </span>
+              </div>
+            </a>
+            <a href="#" class="news-card-link">
+              <img src="image.png" alt="Logo Desa" class="news-image" />
+              <div class="news-content-info">
+                <h4 class="news-title">KETERBELAKANGAN DAN KEMISKINAN</h4>
+                <span class="news-date">
+                  <i class="far fa-calendar-alt"></i> 11 Dec 2013
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <hr class="divider-line" />
+
+        <!-- Widget Kategori Artikel -->
+        <div class="sidebar-widget">
+          <h3 class="sidebar-heading">Kategori Artikel</h3>
+          <div class="category-list-group">
+            <a href="#" class="category-item-link">
+              <span class="category-label"
+                ><i class="fas fa-folder"></i> BERITA DESA</span
+              >
+              <span class="category-count-badge">17</span>
+            </a>
+            <a href="#" class="category-item-link">
+              <span class="category-label"
+                ><i class="fas fa-folder"></i> KEGIATAN DESA</span
+              >
+              <span class="category-count-badge">3</span>
+            </a>
+          </div>
+        </div>
+
+        <hr class="divider-line" />
+
+        <!-- Widget Tag Populer -->
+        <div class="sidebar-widget">
+          <h3 class="sidebar-heading">Tag Populer</h3>
+          <div class="tag-cloud-group">
+            <a href="#" class="tag-badge-link"
+              >#Kegiatan <span class="tag-number">15</span></a
+            >
+            <a href="#" class="tag-badge-link"
+              >#Berita Desa <span class="tag-number">9</span></a
+            >
+            <a href="#" class="tag-badge-link"
+              >#Pengumuman Desa <span class="tag-number">4</span></a
+            >
+            <a href="#" class="tag-badge-link"
+              >#Diskusi <span class="tag-number">2</span></a
+            >
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer Utama -->
+    <footer class="footer-utama">
+      <div class="footer-container">
+        <p class="footer-text">
+          &copy; 2026 <strong>Pemerintah Desa Melung</strong> . Dikembangkan
+          bersama Dinpermasdes & Dinkominfo Kabupaten Banyumas. Hak Cipta
+          Dilindungi.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

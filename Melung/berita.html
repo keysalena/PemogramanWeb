@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Informasi Desa Melung - Kabar Desa</title>
+
+    <!-- Google Fonts & Font Awesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header Utama -->
+    <header class="header-utama">
+      <div class="header-top-bar">
+        <div class="logo-brand">
+          <img src="image.png" alt="Logo Desa" class="logo-image" />
+          <div class="brand-text-group">
+            <span class="brand-subtitle">SISTEM INFORMASI DESA</span>
+            <h1 class="brand-title">Melung</h1>
+          </div>
+        </div>
+
+        <div class="header-clock">
+          <i class="far fa-clock"></i>
+          <span id="live-clock">Minggu, 13 Sep 2026 • 19:27:48 WIB</span>
+        </div>
+      </div>
+
+      <!-- Menu Navigasi -->
+      <nav class="main-navigation">
+        <a href="index.html" class="nav-link"
+          ><i class="fas fa-home"></i> Home</a
+        >
+        <a href="" class="nav-link"
+          >Profil <i class="fas fa-chevron-down"></i
+        ></a>
+        <a href="berita.html" class="nav-link" style="color: #004d47">Berita</a>
+        <!-- <a href="berita.html" class="nav-link" style="color: #004d47;">Berita</a> -->
+        <a href="" class="nav-link">Kabar Desa</a>
+        <a href="" class="nav-link"
+          >Pelayanan <i class="fas fa-chevron-down"></i
+        ></a>
+      </nav>
+    </header>
+
+    <!-- Banner Hero -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <h1 class="hero-title">Kabar & Informasi Desa</h1>
+        <p class="hero-subtitle">Website Resmi Desa Melung</p>
+      </div>
+    </section>
+
+    <!-- Section Kartu Berita Utama -->
+    <section class="news-section-wrapper">
+      <div class="news-container">
+        <!-- Header Bagian Berita -->
+        <div class="news-header">
+          <div class="news-header-title-group">
+            <h2 class="news-header-title">
+              <i class="fa-solid fa-table-cells-large title-icon"></i>
+              Seluruh Berita Desa
+            </h2>
+            <p class="news-header-subtitle">
+              Publikasi dan berita resmi yang dirilis Pemerintah Melung.
+            </p>
+          </div>
+          <div class="news-total-badge">Total 3 Berita</div>
+        </div>
+
+        <hr class="news-divider" />
+
+        <!-- Grid Kartu Berita -->
+        <div class="news-grid">
+          <!-- Kartu Berita 1 -->
+          <article class="news-card">
+            <div class="news-image-wrapper">
+              <span class="category-pill-badge">BERITA DESA</span>
+              <img
+                src="https://images.unsplash.com/photo-1531058240690-006c446962d8?q=80&w=600&auto=format&fit=crop"
+                alt="IPSAL Sukses Gelar Kegiatan"
+                class="news-image"
+              />
+            </div>
+            <div class="news-card-body">
+              <h3 class="news-card-title">
+                IPSAL Sukses Gelar Kegiatan Menyambut HUT RI Ke-81
+              </h3>
+              <div class="news-card-footer">
+                <div class="news-meta-info">
+                  <span class="meta-item"
+                    ><i class="far fa-calendar meta-icon-gold"></i> 02 Sep
+                    2026</span
+                  >
+                  <span class="meta-item"><i class="far fa-eye"></i> 72</span>
+                </div>
+                <a href="#" class="btn-read-more"
+                  >Baca <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kartu Berita 2 -->
+          <article class="news-card">
+            <div class="news-image-wrapper">
+              <span class="category-pill-badge">BERITA DESA</span>
+              <img
+                src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600&auto=format&fit=crop"
+                alt="Peringatan HUT RI Ke-81"
+                class="news-image"
+              />
+            </div>
+            <div class="news-card-body">
+              <h3 class="news-card-title">
+                Peringatan HUT RI Ke-81 di Desa Melung dengan Partisipasi
+                Beragam
+              </h3>
+              <div class="news-card-footer">
+                <div class="news-meta-info">
+                  <span class="meta-item"
+                    ><i class="far fa-calendar meta-icon-gold"></i> 18 Aug
+                    2026</span
+                  >
+                  <span class="meta-item"><i class="far fa-eye"></i> 52</span>
+                </div>
+                <a href="#" class="btn-read-more"
+                  >Baca <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kartu Berita 3 -->
+          <article class="news-card">
+            <div class="news-image-wrapper">
+              <span class="category-pill-badge">BERITA DESA</span>
+              <img
+                src="https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=600&auto=format&fit=crop"
+                alt="Syarat Pelayanan Pemdes"
+                class="news-image"
+              />
+            </div>
+            <div class="news-card-body">
+              <h3 class="news-card-title">
+                Wujudkan Tertib Administrasi, Pemdes Melung Rilis Daftar Lengkap
+                Syarat Pel...
+              </h3>
+              <div class="news-card-footer">
+                <div class="news-meta-info">
+                  <span class="meta-item"
+                    ><i class="far fa-calendar meta-icon-gold"></i> 07 Jul
+                    2026</span
+                  >
+                  <span class="meta-item"><i class="far fa-eye"></i> 165</span>
+                </div>
+                <a href="#" class="btn-read-more"
+                  >Baca <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Popup Berita -->
+    <div class="news-modal-overlay" id="newsModal">
+      <div class="news-modal-box">
+        <!-- Tombol Tutup Silang -->
+        <button
+          class="modal-close-btn"
+          id="modalCloseBtn"
+          aria-label="Tutup modal"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Gambar Berita di Modal -->
+        <div class="modal-image-wrapper">
+          <span class="category-pill-badge" id="modalBadge">BERITA DESA</span>
+          <img src="" alt="Thumbnail Berita" id="modalImage" />
+        </div>
+
+        <!-- Konten Berita di Modal -->
+        <div class="modal-content-body">
+          <div class="modal-meta-bar">
+            <span class="meta-item"
+              ><i class="far fa-calendar meta-icon-gold"></i>
+              <span id="modalDate"></span
+            ></span>
+            <span class="meta-item"
+              ><i class="far fa-eye"></i> <span id="modalViews"></span
+            ></span>
+            <span class="meta-item"
+              ><i class="far fa-user"></i> Admin Desa Melung</span
+            >
+          </div>
+
+          <h2 class="modal-title" id="modalTitle"></h2>
+
+          <div class="modal-text-content" id="modalBody"></div>
+
+          <div class="modal-footer-action">
+            <button class="modal-btn-dismiss" id="modalDismissBtn">
+              Tutup Berita
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Utama -->
+    <footer class="footer-utama">
+      <div class="footer-container">
+        <p class="footer-text">
+          &copy; 2026 <strong>Pemerintah Desa Melung</strong>. Dikembangkan
+          bersama Dinpermasdes & Dinkominfo Kabupaten Banyumas. Hak Cipta
+          Dilindungi.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
