@@ -4,7 +4,10 @@
   "outputDirectory": "public",
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.7.3"
+      "runtime": "vercel-php@0.7.3",
+      "config": {
+        "phpVersion": "8.3"
+      }
     }
   },
   "routes": [
@@ -14,6 +17,7 @@
     }
   ],
   "env": {
+    "VERCEL_PHP_VERSION": "8.3",
     "APP_ENV": "production",
     "APP_DEBUG": "true",
     "APP_CONFIG_CACHE": "/tmp/config.php",
